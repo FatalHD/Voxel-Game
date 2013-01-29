@@ -1,7 +1,5 @@
 package com.voxel.game;
 
-import java.awt.image.BufferedImage;
-import java.awt.image.DataBufferInt;
 import java.lang.reflect.Field;
 import java.nio.FloatBuffer;
 import java.util.Arrays;
@@ -206,7 +204,6 @@ public class VoxelEngine {
 
 			if (System.currentTimeMillis() - timer > 1000) {
 				timer += 1000;
-				System.out.println("Locked: " + updates + " | FPS: " + frames);
 				Display.setTitle("Voxel" + " | " + "Pre Alpha    Locked: " + updates + "  |  FPS: " + frames);
 				updates = 0;
 				frames = 0;
@@ -232,21 +229,20 @@ public class VoxelEngine {
 
 		glLoadIdentity();
 		world.render();
-		int w = 0;
-		int h = 0;
-		w = 300;
-		h = w / 16 * 9;
-		System.out.println(w + "    " + Display.getHeight());
-		glColor4f(0f, 0f, 0f, 0.3f);
-		glBegin(GL_QUADS);
-		{
-			glVertex2f(0, h);
-			glVertex2f(0, 0);
-			glVertex2f(w, 0);
-			glVertex2f(w, h);
-		}
-		glEnd();
 		if (debug) {
+			int w = 0;
+			int h = 0;
+			w = 300;
+			h = w / 16 * 9;
+			glColor4f(0f, 0f, 0f, 0.3f);
+			glBegin(GL_QUADS);
+			{
+				glVertex2f(0, h);
+				glVertex2f(0, 0);
+				glVertex2f(w, 0);
+				glVertex2f(w, h);
+			}
+			glEnd();
 			log.debugOut();
 		}
 	}

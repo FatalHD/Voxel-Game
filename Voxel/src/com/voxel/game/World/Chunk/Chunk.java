@@ -40,8 +40,12 @@ public class Chunk {
 					int r = random.nextInt(3);
 					int r2 = random.nextInt(10);
 					if (y <= 32) {
-						if(r==0)blockID[x][y][z] = 3;
-						else blockID[x][y][z] = 1;
+						 blockID[x][y][z] = 1;
+						if(r==0){
+							blockID[x][y][z] = 3;
+							blockID[x][y+1][z] = 3;
+							
+						}
 					}
 					blockID[x][0][z] = 4;
 					blockID[x][32][z] = 2;
