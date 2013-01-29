@@ -9,4 +9,5 @@ From power the possibilities can be endless from machines that will terraform to
 
 ###Do You Have An Idea?
 I am always up for ideas and suggestions if you have any just hit me up with an;
-email: voxel.game.info@gmail.com.
+email: voxel.game.info@gmail.com. 
+ 
