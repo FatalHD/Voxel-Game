@@ -1,11 +1,8 @@
 package com.voxel.game;
 
-import com.voxel.game.Utility.Logger;
-
 public final class Voxel {
 
 	private static VoxelEngine engine = new VoxelEngine();
-	private static Logger log = new Logger();
 
 	private Voxel() {
 	}

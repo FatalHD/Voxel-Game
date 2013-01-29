@@ -4,7 +4,6 @@ import org.lwjgl.input.Keyboard;
 
 public class KeyboardControls {
 
-	private boolean[] keys = new boolean[120];
 	public boolean up, down, left, right, q, e, shift, esc;
 	int tick = 0;
 

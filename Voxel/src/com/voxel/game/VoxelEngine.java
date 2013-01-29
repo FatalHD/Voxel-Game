@@ -1,7 +1,5 @@
 package com.voxel.game;
 
-import java.awt.image.BufferedImage;
-import java.awt.image.DataBufferInt;
 import java.lang.reflect.Field;
 import java.nio.FloatBuffer;
 import java.util.Arrays;

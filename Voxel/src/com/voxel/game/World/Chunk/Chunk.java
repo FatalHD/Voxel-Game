@@ -38,7 +38,6 @@ public class Chunk {
 			for (int x = 0; x < (int) size.x; x++) {
 				for (int y = 0; y < (int) size.y; y++) {
 					int r = random.nextInt(3);
-					int r2 = random.nextInt(10);
 					if (y <= 32) {
 						if(r==0)blockID[x][y][z] = 3;
 						else blockID[x][y][z] = 1;
