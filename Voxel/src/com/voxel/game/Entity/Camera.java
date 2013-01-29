@@ -112,7 +112,12 @@ public class Camera {
 	}
 
 	public void rotate(int dir, float move) {
-		if (dir == 0) _rx += move * 0.1;
-		if (dir == 1) _ry += move * 0.1;
+		if (dir == 0 && _rx+move<90 &&_rx+move>-90){
+			_rx += move * 0.1;
+		
+		}
+		if (dir == 1)_ry += move * 0.1;
+			System.out.println(_rx+move+"");
+		
 	}
 }
